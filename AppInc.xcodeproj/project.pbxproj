@@ -17,6 +17,9 @@
 		4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FA20B80D44004EFA6E /* DataHolder.swift */; };
 		4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FC20B81324004EFA6E /* Perfil.swift */; };
 		4D6805FF20B81D18004EFA6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6805FE20B81D18004EFA6E /* GoogleService-Info.plist */; };
+		4D68060120B83744004EFA6E /* VCCrearPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68060020B83744004EFA6E /* VCCrearPlan.swift */; };
+		4D68060320B83763004EFA6E /* VCUnirsePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68060220B83763004EFA6E /* VCUnirsePlan.swift */; };
+		4D68060520B837A4004EFA6E /* VCMisPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68060420B837A4004EFA6E /* VCMisPlanes.swift */; };
 		FB33AF85D6D8FDF1C449F23D /* Pods_AppInc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC3ABA7C9EE01CD4A497032 /* Pods_AppInc.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		4D6805FA20B80D44004EFA6E /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		4D6805FC20B81324004EFA6E /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		4D6805FE20B81D18004EFA6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D68060020B83744004EFA6E /* VCCrearPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCrearPlan.swift; sourceTree = "<group>"; };
+		4D68060220B83763004EFA6E /* VCUnirsePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUnirsePlan.swift; sourceTree = "<group>"; };
+		4D68060420B837A4004EFA6E /* VCMisPlanes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMisPlanes.swift; sourceTree = "<group>"; };
 		5D519D67D960449C48E88458 /* Pods-AppInc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.release.xcconfig"; sourceTree = "<group>"; };
 		65A7DD528AA0EA5177F910F2 /* Pods-AppInc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,9 @@
 				4D6805F820B80B3C004EFA6E /* VCRegister.swift */,
 				4D6805FA20B80D44004EFA6E /* DataHolder.swift */,
 				4D6805FC20B81324004EFA6E /* Perfil.swift */,
+				4D68060020B83744004EFA6E /* VCCrearPlan.swift */,
+				4D68060220B83763004EFA6E /* VCUnirsePlan.swift */,
+				4D68060420B837A4004EFA6E /* VCMisPlanes.swift */,
 			);
 			path = AppInc;
 			sourceTree = "<group>";
@@ -252,10 +261,13 @@
 			files = (
 				4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */,
 				4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */,
+				4D68060520B837A4004EFA6E /* VCMisPlanes.swift in Sources */,
 				4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */,
 				4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */,
 				4D13CB1720AEED8B00EE7337 /* ViewController.swift in Sources */,
 				4D13CB1520AEED8B00EE7337 /* AppDelegate.swift in Sources */,
+				4D68060120B83744004EFA6E /* VCCrearPlan.swift in Sources */,
+				4D68060320B83763004EFA6E /* VCUnirsePlan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
