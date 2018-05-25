@@ -68,10 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Email" destination="YrL-BA-yDK" id="s55-8q-gvU"/>
                         <outlet property="Password" destination="HQi-j0-Wjg" id="9Lq-rA-tC1"/>
-                        <outlet property="User" destination="YrL-BA-yDK" id="w3f-4o-q6w"/>
                         <outlet property="btnLogin" destination="2w6-H6-cfN" id="B9v-pY-Twq"/>
-                        <outlet property="btnRegister" destination="Ylk-YF-8xP" id="jue-jz-3ev"/>
                         <segue destination="mqM-O6-zvz" kind="show" identifier="transitionLogin" id="SHF-TE-MFt"/>
                     </connections>
                 </viewController>
@@ -201,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="665" y="536"/>
         </scene>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="ZbF-5L-Q1f">
             <objects>
-                <viewController id="vd9-ky-iiD" sceneMemberID="viewController">
+                <viewController id="vd9-ky-iiD" customClass="VCRegister" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tlR-Af-I0S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,6 +214,9 @@
                                 <color key="backgroundColor" red="0.45804847279999999" green="1" blue="0.309093532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="clickRegistrar" destination="vd9-ky-iiD" eventType="touchUpInside" id="9DC-iW-iUi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiQ-wD-7gk">
                                 <rect key="frame" x="0.0" y="550" width="188" height="117"/>
@@ -222,15 +224,57 @@
                                 <color key="backgroundColor" red="0.1955776515" green="0.73076152380000003" blue="0.78920417750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iNA-bk-99O"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ec-T0-dDM">
+                                <rect key="frame" x="139" y="183" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-Se-12l">
+                                <rect key="frame" x="139" y="231" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdM-yC-5Nv">
+                                <rect key="frame" x="139" y="278" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RePassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-aa-U23">
+                                <rect key="frame" x="139" y="324" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.85563673090000003" green="0.80089776850000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="FUf-X9-dKj"/>
                     </view>
+                    <connections>
+                        <outlet property="btnRegister" destination="YC0-1Y-7Yi" id="4Qg-ru-ukY"/>
+                        <outlet property="txtEmail" destination="Lhq-Se-12l" id="de9-Ao-ewB"/>
+                        <outlet property="txtPassword" destination="rdM-yC-5Nv" id="bXD-kT-hGh"/>
+                        <outlet property="txtRePassword" destination="xAQ-aa-U23" id="Iv5-Yf-0Ci"/>
+                        <outlet property="txtUser" destination="9Ec-T0-dDM" id="JCx-Sj-R6U"/>
+                        <segue destination="mqM-O6-zvz" kind="show" identifier="transitionRegister" id="wVR-Gv-pS4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-tF-yo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-604" y="905"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wVR-Gv-pS4"/>
+    </inferredMetricsTieBreakers>
 </document>

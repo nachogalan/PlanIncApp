@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>445863153457-8s9mmjbm87hagcavqnkiesnb5ga73avd.apps.googleusercontent.com</string>
+	<string>614741857158-jres6agoj7krr8k7ms8urp3fn4i8eg0u.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.445863153457-8s9mmjbm87hagcavqnkiesnb5ga73avd</string>
+	<string>com.googleusercontent.apps.614741857158-jres6agoj7krr8k7ms8urp3fn4i8eg0u</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCyiIEssNv0w2k-QqfgZepxv4iC4Zx4MZE</string>
+	<string>AIzaSyCoHWiiyevwB0n5_XKbAWq76yjiM9n-EKo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>445863153457</string>
+	<string>614741857158</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>IGP.FirstProject</string>
+	<string>IGP.PlanInc</string>
 	<key>PROJECT_ID</key>
-	<string>primerproyecto-79dc7</string>
+	<string>planinc-471b1</string>
 	<key>STORAGE_BUCKET</key>
-	<string>primerproyecto-79dc7.appspot.com</string>
+	<string>planinc-471b1.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:445863153457:ios:84ab4746274b1b68</string>
+	<string>1:614741857158:ios:0d9b46e781880ad5</string>
 	<key>DATABASE_URL</key>
-	<string>https://primerproyecto-79dc7.firebaseio.com</string>
+	<string>https://planinc-471b1.firebaseio.com</string>
 </dict>
 </plist>

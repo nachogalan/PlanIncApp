@@ -13,7 +13,10 @@
 		4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D13CB1B20AEED8B00EE7337 /* AppInc.xcdatamodeld */; };
 		4D13CB1F20AEED8C00EE7337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D13CB1E20AEED8C00EE7337 /* Assets.xcassets */; };
 		4D13CB2220AEED8C00EE7337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D13CB2020AEED8C00EE7337 /* LaunchScreen.storyboard */; };
-		4D13CB2A20AEEE2F00EE7337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D13CB2920AEEE2F00EE7337 /* GoogleService-Info.plist */; };
+		4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805F820B80B3C004EFA6E /* VCRegister.swift */; };
+		4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FA20B80D44004EFA6E /* DataHolder.swift */; };
+		4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FC20B81324004EFA6E /* Perfil.swift */; };
+		4D6805FF20B81D18004EFA6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6805FE20B81D18004EFA6E /* GoogleService-Info.plist */; };
 		FB33AF85D6D8FDF1C449F23D /* Pods_AppInc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC3ABA7C9EE01CD4A497032 /* Pods_AppInc.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +30,10 @@
 		4D13CB1E20AEED8C00EE7337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D13CB2120AEED8C00EE7337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D13CB2320AEED8C00EE7337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D13CB2920AEEE2F00EE7337 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D6805F820B80B3C004EFA6E /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
+		4D6805FA20B80D44004EFA6E /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
+		4D6805FC20B81324004EFA6E /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		4D6805FE20B81D18004EFA6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5D519D67D960449C48E88458 /* Pods-AppInc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.release.xcconfig"; sourceTree = "<group>"; };
 		65A7DD528AA0EA5177F910F2 /* Pods-AppInc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,14 +79,17 @@
 		4D13CB1320AEED8B00EE7337 /* AppInc */ = {
 			isa = PBXGroup;
 			children = (
+				4D6805FE20B81D18004EFA6E /* GoogleService-Info.plist */,
 				4D13CB1420AEED8B00EE7337 /* AppDelegate.swift */,
 				4D13CB1620AEED8B00EE7337 /* ViewController.swift */,
 				4D13CB1820AEED8B00EE7337 /* Main.storyboard */,
 				4D13CB1E20AEED8C00EE7337 /* Assets.xcassets */,
 				4D13CB2020AEED8C00EE7337 /* LaunchScreen.storyboard */,
 				4D13CB2320AEED8C00EE7337 /* Info.plist */,
-				4D13CB2920AEEE2F00EE7337 /* GoogleService-Info.plist */,
 				4D13CB1B20AEED8B00EE7337 /* AppInc.xcdatamodeld */,
+				4D6805F820B80B3C004EFA6E /* VCRegister.swift */,
+				4D6805FA20B80D44004EFA6E /* DataHolder.swift */,
+				4D6805FC20B81324004EFA6E /* Perfil.swift */,
 			);
 			path = AppInc;
 			sourceTree = "<group>";
@@ -156,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D13CB2220AEED8C00EE7337 /* LaunchScreen.storyboard in Resources */,
-				4D13CB2A20AEEE2F00EE7337 /* GoogleService-Info.plist in Resources */,
+				4D6805FF20B81D18004EFA6E /* GoogleService-Info.plist in Resources */,
 				4D13CB1F20AEED8C00EE7337 /* Assets.xcassets in Resources */,
 				4D13CB1A20AEED8B00EE7337 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */,
+				4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */,
+				4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */,
+				4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */,
 				4D13CB1720AEED8B00EE7337 /* ViewController.swift in Sources */,
 				4D13CB1520AEED8B00EE7337 /* AppDelegate.swift in Sources */,
 			);
@@ -391,7 +403,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF2345VHG6;
 				INFOPLIST_FILE = AppInc/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = IGP.AppInc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -407,7 +422,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NF2345VHG6;
 				INFOPLIST_FILE = AppInc/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = IGP.AppInc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
