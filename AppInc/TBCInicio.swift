@@ -1,18 +1,20 @@
 //
-//  VCMisPlanes.swift
+//  TBCInicio.swift
 //  AppInc
 //
-//  Created by IGNACIO GALAN DE PINA on 25/5/18.
+//  Created by IGNACIO OLAGORTA VERA on 1/6/18.
 //  Copyright © 2018 IGNACIO GALAN DE PINA. All rights reserved.
 //
 
 import UIKit
 
-class VCMisPlanes: UIViewController,DataHolderDelegate {
+class TBCInicio: UITabBarController, DataHolderDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.selectedIndex = DataHolder.sharedInstance.tabBarSelectedIndex
+        //tabBar.selectedItem = DataHolder.sharedInstance.tabBarSelectedItem
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +22,13 @@ class VCMisPlanes: UIViewController,DataHolderDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        //print("HOLA!!!! ")
+        DataHolder.sharedInstance.tabBarSelectedIndex = self.selectedIndex
+    }
+    
+    
     
 
     /*

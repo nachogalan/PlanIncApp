@@ -14,8 +14,14 @@ class ViewController: UIViewController, DataHolderDelegate {
     @IBOutlet var Email:UITextField?
     @IBOutlet var Password:UITextField?
     @IBOutlet var btnLogin:UIButton?
+    @IBOutlet var btnRegister:UIButton?
+    @IBOutlet var lblRecuerdame:UILabel?
     
     override func viewDidLoad() {
+        btnLogin?.layer.cornerRadius = 15
+        btnRegister?.layer.cornerRadius = 15
+        lblRecuerdame?.layer.masksToBounds = true
+        lblRecuerdame?.layer.cornerRadius = 5
         super.viewDidLoad();
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -34,7 +40,7 @@ class ViewController: UIViewController, DataHolderDelegate {
     
     @IBAction func clickLogin(){
         print("Hola " + (Email?.text)!)
-        DataHolder.sharedInstance.confirmarLogin(user: (Email?.text)!, password: (Password?.text)!, delegate: self)
+        DataHolder.sharedInstance.confirmarLogin(email: (Email?.text)!, password: (Password?.text)!, delegate: self)
         
         
     }

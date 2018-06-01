@@ -18,6 +18,8 @@ class VCRegister: UIViewController, DataHolderDelegate {
     @IBOutlet var btnRegister:UIButton?
     @IBOutlet var btnCancelar:UIButton?
     override func viewDidLoad() {
+        btnRegister?.layer.cornerRadius = 15
+        btnCancelar?.layer.cornerRadius = 15
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
