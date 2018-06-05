@@ -36,7 +36,7 @@ class DataHolder: NSObject {
         
     }
     
-    func crearPlan(nombre:String, descripcion:String, fecha:String, horario:String, limitePersonas:String, tipo:String, creador:String, delegate:DataHolderDelegate) {
+    func crearPlan(nombre:String, descripcion:String, fecha:String, horario:String, limitePersonas:String, tipo:String, lugar:String, creador:String, delegate:DataHolderDelegate) {
         DataHolder.sharedInstance.fireStoreDB?.collection("PlanesGenerales").document().setData(DataHolder.sharedInstance.miPlan.getMap())
         delegate.DHDCrearPlan!(blFin: true)
     }

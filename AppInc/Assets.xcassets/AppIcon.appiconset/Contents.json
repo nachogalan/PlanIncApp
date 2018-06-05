@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "WhatsApp Image 2018-06-05 at 13.32.32.jpeg",
       "scale" : "2x"
     },
     {

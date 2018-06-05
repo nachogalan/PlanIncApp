@@ -8,6 +8,7 @@ class PlanesGenerales: NSObject {
     var sLimitePersonas:String?
     var sNombre:String?
     var sTipo:String?
+    var sLugar:String?
     var sCreador:String?
     
     
@@ -19,6 +20,7 @@ class PlanesGenerales: NSObject {
         sLimitePersonas = valores ["LimitePersonas"] as? String
         sNombre = valores ["Nombre"] as? String
         sTipo = valores ["Tipo"] as? String
+        sLugar = valores ["Lugar"] as? String
         sCreador = valores ["Creador"] as? String
         
     }
@@ -31,6 +33,7 @@ class PlanesGenerales: NSObject {
             "LimitePersonas": sLimitePersonas as Any,
             "Nombre": sNombre as Any,
             "Tipo": sTipo as Any,
+            "Lugar": sLugar as Any,
             "Creador": sCreador as Any
             
         ]

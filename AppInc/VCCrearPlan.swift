@@ -17,6 +17,7 @@ class VCCrearPlan: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet var txtFecha:UITextField?
     @IBOutlet var txtHorario:UITextField?
     @IBOutlet var txtNombre:UITextField?
+    @IBOutlet var txtLugar:UITextField?
     @IBOutlet var btnGruadarPlan:UIButton?
     
     let planes = ["Fiesta","Quedada","Bares","Excursión","Concierto","Videojuegos"]
@@ -53,11 +54,12 @@ class VCCrearPlan: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         DataHolder.sharedInstance.miPlan.sLimitePersonas = lblnumPersonas?.text
         DataHolder.sharedInstance.miPlan.sNombre = txtNombre?.text
         DataHolder.sharedInstance.miPlan.sTipo = lblEvento?.text
+        DataHolder.sharedInstance.miPlan.sLugar = txtLugar?.text
         DataHolder.sharedInstance.miPlan.sCreador = DataHolder.sharedInstance.userActual
-        if txtNombre?.text=="" || txtDescripcion?.text == "" || txtFecha?.text == "" || txtHorario?.text == "" || lblEvento?.text == "Label" {
+        if txtNombre?.text=="" || txtDescripcion?.text == "" || txtFecha?.text == "" || txtHorario?.text == "" || txtLugar?.text == "" || lblEvento?.text == "Label" {
             print("Hay que rellenar todos los campos, hijoputa!!!!!")
         } else{
-            DataHolder.sharedInstance.crearPlan(nombre: (txtNombre?.text)!, descripcion: (txtDescripcion?.text)!,fecha: (txtFecha?.text)!,horario: (txtHorario?.text)!,limitePersonas: (lblnumPersonas?.text)!,tipo: (lblEvento?.text)!,creador:(DataHolder.sharedInstance.userActual)!, delegate: self)
+            DataHolder.sharedInstance.crearPlan(nombre: (txtNombre?.text)!, descripcion: (txtDescripcion?.text)!,fecha: (txtFecha?.text)!,horario: (txtHorario?.text)!,limitePersonas: (lblnumPersonas?.text)!,tipo: (lblEvento?.text)!,lugar: (txtLugar?.text)!,creador:(DataHolder.sharedInstance.userActual)!, delegate: self)
         }
         
         

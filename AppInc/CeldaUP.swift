@@ -15,6 +15,7 @@ class CeldaUP: UITableViewCell, DataHolderDelegate {
     @IBOutlet var lblHorario:UILabel?
     @IBOutlet var lblTipo:UILabel?
     @IBOutlet var lblLimitePersonas:UILabel?
+    @IBOutlet var lblLugar:UILabel?
     @IBOutlet var lblCreador:UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
