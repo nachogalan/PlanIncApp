@@ -28,6 +28,7 @@ class DataHolder: NSObject {
     var fireStoreDB:Firestore?
     var firStorageRef:StorageReference?
     
+    
     func initFireBase(){
         FirebaseApp.configure()
         fireStoreDB = Firestore.firestore()
@@ -70,11 +71,206 @@ class DataHolder: NSObject {
         
     }
     
+    //Aqui se realizara la descarga de los planes ya filtrados
+    func descargarPlanesFiesta(delegate:DataHolderDelegate){
+        
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Fiesta").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+    func descargarPlanesQuedadas(delegate:DataHolderDelegate){
+        
+       
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Quedada").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+    func descargarPlanesBares(delegate:DataHolderDelegate){
+        
+        
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Bares").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+    func descargarPlanesConciertos(delegate:DataHolderDelegate){
+        
+        
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Concierto").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+    func descargarPlanesExcursiones(delegate:DataHolderDelegate){
+        
+     
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Excursión").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    
+    func descargarPlanesVideojuegos(delegate:DataHolderDelegate){
+        
+      
+        
+        fireStoreDB?.collection("PlanesGenerales").whereField("Tipo", isEqualTo: "Videojuegos").addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanes=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanes.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanes.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+
+    //
+    
     func crearUsuario (user:String, password:String, delegate:DataHolderDelegate){
         Auth.auth().createUser(withEmail: user, password: password) { (user, error) in
             if user != nil{
                 print("Registrado")
                 DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(DataHolder.sharedInstance.miPerfil.getMap())
+            
                 delegate.DHDCrearUsuarioRegistro!(blFin: true)
                 
             }else{

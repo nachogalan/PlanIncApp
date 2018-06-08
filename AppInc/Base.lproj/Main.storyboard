@@ -111,7 +111,7 @@
         <!--FILTRAR PLANES-->
         <scene sceneID="R5X-qI-wX2">
             <objects>
-                <viewController id="rRT-EI-0Sb" sceneMemberID="viewController">
+                <viewController id="rRT-EI-0Sb" customClass="VCFiltrarPlanes" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zvG-Dz-sX0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -444,7 +444,7 @@
         <!--VCFiesta-->
         <scene sceneID="8MR-gU-xZP">
             <objects>
-                <viewController title="VCFiesta" id="Z4m-Gh-ifZ" sceneMemberID="viewController">
+                <viewController title="VCFiesta" id="Z4m-Gh-ifZ" customClass="VCFiesta" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cdb-vm-Mc1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,7 +458,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="GA8-F2-eP2" userLabel="idCeldaFiesta" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="GA8-F2-eP2" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GA8-F2-eP2" id="DZL-U0-qIq">
@@ -542,6 +542,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z4m-Gh-ifZ" id="p0o-Ua-fGy"/>
+                                    <outlet property="delegate" destination="Z4m-Gh-ifZ" id="3mx-vu-d50"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7F-QU-r81">
                                 <rect key="frame" x="21" y="631" width="36" height="30"/>
@@ -562,6 +566,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QdJ-Vz-aVe"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="Hdn-7f-yyz" id="420-1t-xh9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCo-uw-Uw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -570,7 +577,7 @@
         <!--VCQuedadas-->
         <scene sceneID="daJ-u8-ZOP">
             <objects>
-                <viewController title="VCQuedadas" id="WA8-vY-1wB" sceneMemberID="viewController">
+                <viewController title="VCQuedadas" id="WA8-vY-1wB" customClass="VCQuedadas" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Swr-0B-Tnu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -591,7 +598,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="C1u-Bv-ZVm" userLabel="idCeldaQuedadas" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="C1u-Bv-ZVm" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C1u-Bv-ZVm" id="gho-EK-4Qh">
@@ -675,6 +682,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WA8-vY-1wB" id="QaE-Yx-sje"/>
+                                    <outlet property="delegate" destination="WA8-vY-1wB" id="zDf-4v-lad"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7e-xj-cLQ">
                                 <rect key="frame" x="21" y="626" width="36" height="30"/>
@@ -688,6 +699,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eWG-qE-bYd"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="EGt-46-LwB" id="liK-TH-HEo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJr-86-ayz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -696,7 +710,7 @@
         <!--VCExcursiones-->
         <scene sceneID="ODD-7P-BF8">
             <objects>
-                <viewController title="VCExcursiones" id="Gb9-O0-Axb" sceneMemberID="viewController">
+                <viewController title="VCExcursiones" id="Gb9-O0-Axb" customClass="VCExcursiones" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tf7-3L-KyC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -725,7 +739,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="SXx-FL-Gya" userLabel="idCeldaPlanes" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="SXx-FL-Gya" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SXx-FL-Gya" id="UuM-88-UDo">
@@ -809,11 +823,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Gb9-O0-Axb" id="mzR-ZK-8Ae"/>
+                                    <outlet property="delegate" destination="Gb9-O0-Axb" id="df8-of-xhc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ri6-hI-15B"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="wWy-sv-ICf" id="T8m-W8-sQV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCL-Vu-AZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -822,7 +843,7 @@
         <!--VCConciertos-->
         <scene sceneID="SUw-4L-Phf">
             <objects>
-                <viewController title="VCConciertos" id="rQx-NH-Cfp" sceneMemberID="viewController">
+                <viewController title="VCConciertos" id="rQx-NH-Cfp" customClass="VCConciertos" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4i-9q-7Tu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -851,7 +872,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="z9T-94-ECp" userLabel="idCeldaPlanes" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="z9T-94-ECp" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z9T-94-ECp" id="L90-9t-F8B">
@@ -935,11 +956,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rQx-NH-Cfp" id="VFI-AO-nUr"/>
+                                    <outlet property="delegate" destination="rQx-NH-Cfp" id="dxU-ds-B2F"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oua-uS-Jrv"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="Cdw-GZ-uz1" id="XBp-mD-gda"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0S-cI-Y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -948,7 +976,7 @@
         <!--VCVideojuegos-->
         <scene sceneID="beq-Ql-D38">
             <objects>
-                <viewController title="VCVideojuegos" id="bHV-6A-liq" sceneMemberID="viewController">
+                <viewController title="VCVideojuegos" id="bHV-6A-liq" customClass="VCVideojuegos" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPl-2Z-63F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -977,7 +1005,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="k59-wi-h3g" userLabel="idCeldaPlanes" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="k59-wi-h3g" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k59-wi-h3g" id="xWR-wK-4OL">
@@ -1061,11 +1089,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bHV-6A-liq" id="YKd-rN-Ag8"/>
+                                    <outlet property="delegate" destination="bHV-6A-liq" id="J5A-kq-AW0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UV6-jw-BZs"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="zrq-kh-bkj" id="Aee-8y-tzo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tr1-Gz-uWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1074,7 +1109,7 @@
         <!--VCBares-->
         <scene sceneID="qQW-rc-MbG">
             <objects>
-                <viewController title="VCBares" id="Qtp-nr-kkF" sceneMemberID="viewController">
+                <viewController title="VCBares" id="Qtp-nr-kkF" customClass="VCBares" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBP-aB-Nrt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1103,7 +1138,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="uNn-6M-W3E" userLabel="idCeldaBares" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaPlanes" rowHeight="214" id="uNn-6M-W3E" customClass="CeldaUP" customModule="AppInc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNn-6M-W3E" id="ITC-ta-hrX">
@@ -1187,11 +1222,18 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qtp-nr-kkF" id="Ohe-0P-RXa"/>
+                                    <outlet property="delegate" destination="Qtp-nr-kkF" id="krV-Ne-vNz"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gAg-7K-PAf"/>
                     </view>
+                    <connections>
+                        <outlet property="tablaPlanes" destination="4m7-g4-BWK" id="LOg-uh-0ve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dn1-3G-qfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1851,7 +1893,7 @@
         <image name="wallpaperapp" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4sK-ab-hfo"/>
+        <segue reference="XNg-BJ-zqN"/>
         <segue reference="lw7-i0-UBe"/>
     </inferredMetricsTieBreakers>
 </document>

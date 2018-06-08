@@ -13,6 +13,13 @@
 		4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D13CB1B20AEED8B00EE7337 /* AppInc.xcdatamodeld */; };
 		4D13CB1F20AEED8C00EE7337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D13CB1E20AEED8C00EE7337 /* Assets.xcassets */; };
 		4D13CB2220AEED8C00EE7337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D13CB2020AEED8C00EE7337 /* LaunchScreen.storyboard */; };
+		4D640C6A20CA80E8004ADF95 /* VCFiltrarPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C6920CA80E8004ADF95 /* VCFiltrarPlanes.swift */; };
+		4D640C6C20CA82CE004ADF95 /* VCFiesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C6B20CA82CE004ADF95 /* VCFiesta.swift */; };
+		4D640C6E20CA82E4004ADF95 /* VCConciertos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C6D20CA82E4004ADF95 /* VCConciertos.swift */; };
+		4D640C7020CA82F6004ADF95 /* VCQuedadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C6F20CA82F6004ADF95 /* VCQuedadas.swift */; };
+		4D640C7220CA830A004ADF95 /* VCExcursiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C7120CA830A004ADF95 /* VCExcursiones.swift */; };
+		4D640C7420CA8319004ADF95 /* VCVideojuegos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C7320CA8319004ADF95 /* VCVideojuegos.swift */; };
+		4D640C7620CA832B004ADF95 /* VCBares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D640C7520CA832B004ADF95 /* VCBares.swift */; };
 		4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805F820B80B3C004EFA6E /* VCRegister.swift */; };
 		4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FA20B80D44004EFA6E /* DataHolder.swift */; };
 		4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6805FC20B81324004EFA6E /* Perfil.swift */; };
@@ -36,6 +43,13 @@
 		4D13CB1E20AEED8C00EE7337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D13CB2120AEED8C00EE7337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D13CB2320AEED8C00EE7337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D640C6920CA80E8004ADF95 /* VCFiltrarPlanes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFiltrarPlanes.swift; sourceTree = "<group>"; };
+		4D640C6B20CA82CE004ADF95 /* VCFiesta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFiesta.swift; sourceTree = "<group>"; };
+		4D640C6D20CA82E4004ADF95 /* VCConciertos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCConciertos.swift; sourceTree = "<group>"; };
+		4D640C6F20CA82F6004ADF95 /* VCQuedadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCQuedadas.swift; sourceTree = "<group>"; };
+		4D640C7120CA830A004ADF95 /* VCExcursiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExcursiones.swift; sourceTree = "<group>"; };
+		4D640C7320CA8319004ADF95 /* VCVideojuegos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCVideojuegos.swift; sourceTree = "<group>"; };
+		4D640C7520CA832B004ADF95 /* VCBares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCBares.swift; sourceTree = "<group>"; };
 		4D6805F820B80B3C004EFA6E /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
 		4D6805FA20B80D44004EFA6E /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		4D6805FC20B81324004EFA6E /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
@@ -108,6 +122,13 @@
 				DDF1C92120C152DF008A7101 /* TBCInicio.swift */,
 				DDF1C92320C16652008A7101 /* PlanesGenerales.swift */,
 				DDF1C92520C1691D008A7101 /* CeldaUP.swift */,
+				4D640C6920CA80E8004ADF95 /* VCFiltrarPlanes.swift */,
+				4D640C6B20CA82CE004ADF95 /* VCFiesta.swift */,
+				4D640C6D20CA82E4004ADF95 /* VCConciertos.swift */,
+				4D640C6F20CA82F6004ADF95 /* VCQuedadas.swift */,
+				4D640C7120CA830A004ADF95 /* VCExcursiones.swift */,
+				4D640C7320CA8319004ADF95 /* VCVideojuegos.swift */,
+				4D640C7520CA832B004ADF95 /* VCBares.swift */,
 			);
 			path = AppInc;
 			sourceTree = "<group>";
@@ -268,15 +289,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D640C6C20CA82CE004ADF95 /* VCFiesta.swift in Sources */,
 				4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */,
 				4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */,
+				4D640C6E20CA82E4004ADF95 /* VCConciertos.swift in Sources */,
+				4D640C6A20CA80E8004ADF95 /* VCFiltrarPlanes.swift in Sources */,
+				4D640C7420CA8319004ADF95 /* VCVideojuegos.swift in Sources */,
 				DDF1C92620C1691D008A7101 /* CeldaUP.swift in Sources */,
 				4D68060520B837A4004EFA6E /* VCMisPlanes.swift in Sources */,
 				4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */,
 				4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */,
+				4D640C7220CA830A004ADF95 /* VCExcursiones.swift in Sources */,
 				DDF1C92420C16652008A7101 /* PlanesGenerales.swift in Sources */,
+				4D640C7620CA832B004ADF95 /* VCBares.swift in Sources */,
 				4D13CB1720AEED8B00EE7337 /* ViewController.swift in Sources */,
 				4D13CB1520AEED8B00EE7337 /* AppDelegate.swift in Sources */,
+				4D640C7020CA82F6004ADF95 /* VCQuedadas.swift in Sources */,
 				4D68060120B83744004EFA6E /* VCCrearPlan.swift in Sources */,
 				DDF1C92220C152DF008A7101 /* TBCInicio.swift in Sources */,
 				4D68060320B83763004EFA6E /* VCUnirsePlan.swift in Sources */,
