@@ -267,7 +267,7 @@ class DataHolder: NSObject {
     
     func descargarRandom(delegate:DataHolderDelegate){
         
-        let RandomNumberGen = arc4random_uniform(3)
+        let RandomNumberGen = arc4random_uniform(10)
         print(RandomNumberGen)
         
         fireStoreDB?.collection("PlanesRandom").whereField("id", isEqualTo: RandomNumberGen).addSnapshotListener { (querySnapshot, err) in

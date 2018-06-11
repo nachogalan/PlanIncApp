@@ -9,6 +9,8 @@
 import UIKit
 
 class CeldaUP: UITableViewCell, DataHolderDelegate {
+    @IBOutlet weak var cellView: UIView!
+    
     @IBOutlet var lblNombre:UILabel?
     @IBOutlet var lblDescripcion:UILabel?
     @IBOutlet var lblFecha:UILabel?

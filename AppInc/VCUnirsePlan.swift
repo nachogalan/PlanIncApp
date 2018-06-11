@@ -14,7 +14,7 @@ class VCUnirsePlan: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         DataHolder.sharedInstance.descargarPlanes(delegate:self)
         
@@ -22,13 +22,16 @@ class VCUnirsePlan: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
         print("CONSULTO CANTIDAD DDE FILAS A PINTAR")
         return DataHolder.sharedInstance.arPlanes.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+       
         let celda = tableView.dequeueReusableCell(withIdentifier: "idCeldaPlanes") as! CeldaUP
+        celda.cellView.layer.cornerRadius = celda.cellView.frame.height / 2
         celda.lblNombre?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sNombre
         celda.lblDescripcion?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sDescripcion
         celda.lblFecha?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sFecha
