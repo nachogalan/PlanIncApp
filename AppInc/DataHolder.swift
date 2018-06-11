@@ -21,6 +21,7 @@ class DataHolder: NSObject {
     
     var miPerfil:Perfil = Perfil()
     var arPlanes:[PlanesGenerales] = []
+    var arPlanesRandom:[PlanesRandom] = []
     var miPlan:PlanesGenerales = PlanesGenerales()
     var userActual:String?
     var tabBarSelectedIndex:Int = 0
@@ -255,6 +256,38 @@ class DataHolder: NSObject {
                 //self.tbTablaChamp?.reloadData()
                 //self.refreshUI()
                 
+                
+                
+            }
+        }
+        
+    }
+    
+    //Metodo para descargar de la base de datos uno de los planes aleatorios determinados con anterioridad
+    
+    func descargarRandom(delegate:DataHolderDelegate){
+        
+        let RandomNumberGen = arc4random_uniform(3)
+        print(RandomNumberGen)
+        
+        fireStoreDB?.collection("PlanesRandom").whereField("id", isEqualTo: RandomNumberGen).addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaPlanes!(blFin: false)
+            } else {
+                self.arPlanesRandom=[]
+                for document in querySnapshot!.documents {
+                    
+                    let nombre:PlanesRandom = PlanesRandom()
+                    nombre.setMap(valores: document.data())
+                    self.arPlanesRandom.append(nombre)
+                    
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+                print("------->>>>>> ",self.arPlanesRandom.count)
+                delegate.DHDDescargaPlanes!(blFin: true)
+               
                 
                 
             }
