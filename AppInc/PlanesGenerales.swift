@@ -2,6 +2,7 @@ import UIKit
 
 class PlanesGenerales: NSObject {
     
+    var sID:String?
     var sDescripcion:String?
     var sFecha:String?
     var sHorario:String?

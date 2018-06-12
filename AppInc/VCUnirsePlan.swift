@@ -40,6 +40,7 @@ class VCUnirsePlan: UIViewController, UITableViewDelegate, UITableViewDataSource
         celda.lblLimitePersonas?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sLimitePersonas
         celda.lblLugar?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sLugar
         celda.lblCreador?.text =  DataHolder.sharedInstance.arPlanes[indexPath.row].sCreador
+        celda.sIDEvento = DataHolder.sharedInstance.arPlanes[indexPath.row].sID
         
         
         return celda

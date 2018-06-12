@@ -54,6 +54,7 @@ class DataHolder: NSObject {
                 for document in querySnapshot!.documents {
                     
                     let nombre:PlanesGenerales = PlanesGenerales()
+                    nombre.sID = document.documentID
                     nombre.setMap(valores: document.data())
                     self.arPlanes.append(nombre)
                     
@@ -62,6 +63,36 @@ class DataHolder: NSObject {
                 }
                 print("------->>>>>> ",self.arPlanes.count)
                 delegate.DHDDescargaPlanes!(blFin: true)
+                //self.tbTablaChamp?.reloadData()
+                //self.refreshUI()
+                
+                
+                
+            }
+        }
+        
+    }
+    
+    func descargarMisPlanes(delegate:DataHolderDelegate){
+        
+        fireStoreDB?.collection("Perfiles").whereField("Perfiles.misPlanes", isEqualTo: self.miPerfil.arMisPlanes).addSnapshotListener { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                delegate.DHDDescargaMisPlanes!(blFin: false)
+            } else {
+                
+//                for document in querySnapshot!.documents {
+//
+//                    let nombre:PlanesGenerales = PlanesGenerales()
+//                    nombre.sID = document.documentID
+//                    nombre.setMap(valores: document.data())
+//                    self.miPerfil.arMisPlanes.append(nombre)
+//
+//                    print("\(document.documentID) => \(document.data())")
+//
+//                }
+                print("------->>>>>> ",self.miPerfil.arMisPlanes.count)
+                delegate.DHDDescargaMisPlanes!(blFin: true)
                 //self.tbTablaChamp?.reloadData()
                 //self.refreshUI()
                 
@@ -302,7 +333,8 @@ class DataHolder: NSObject {
         Auth.auth().createUser(withEmail: user, password: password) { (user, error) in
             if user != nil{
                 print("Registrado")
-                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(DataHolder.sharedInstance.miPerfil.getMap())
+                self.miPerfil.sID = user?.uid
+                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(self.miPerfil.getMap())
             
                 delegate.DHDCrearUsuarioRegistro!(blFin: true)
                 
@@ -321,6 +353,7 @@ class DataHolder: NSObject {
                     DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!);
                 ruta?.getDocument { (document, error) in
                     if document != nil {
+                        DataHolder.sharedInstance.miPerfil.sID = document?.documentID
                         DataHolder.sharedInstance.miPerfil.setMap(valores: (document?.data())!)
                         delegate.DHDConfirmacionLogin!(blFin: true)
                         self.userActual = email
@@ -342,6 +375,7 @@ class DataHolder: NSObject {
 }
 
 @objc protocol DataHolderDelegate{
+    @objc optional func DHDDescargaMisPlanes(blFin:Bool)
     @objc optional func DHDDescargaPlanes(blFin:Bool)
     @objc optional func DHDConfirmacionLogin(blFin:Bool)
     @objc optional func DHDCrearUsuarioRegistro(blFin:Bool)

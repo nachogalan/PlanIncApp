@@ -10,7 +10,7 @@ import UIKit
 
 class CeldaUP: UITableViewCell, DataHolderDelegate {
     @IBOutlet weak var cellView: UIView!
-    
+    var sIDEvento:String?
     @IBOutlet var lblNombre:UILabel?
     @IBOutlet var lblDescripcion:UILabel?
     @IBOutlet var lblFecha:UILabel?
@@ -29,5 +29,13 @@ class CeldaUP: UITableViewCell, DataHolderDelegate {
         
         // Configure the view for the selected state
     }
+    
+    @IBAction func btnUnirse(){
+        
+        DataHolder.sharedInstance.miPerfil.arMisPlanes.append(sIDEvento!)
+        DataHolder.sharedInstance.miPerfil.save()
+    }
+    
+    
     
 }
