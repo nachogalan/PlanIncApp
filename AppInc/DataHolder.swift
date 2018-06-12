@@ -75,31 +75,13 @@ class DataHolder: NSObject {
     
     func descargarMisPlanes(delegate:DataHolderDelegate){
         
-        fireStoreDB?.collection("Perfiles").whereField("Perfiles.misPlanes", isEqualTo: self.miPerfil.arMisPlanes).addSnapshotListener { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-                delegate.DHDDescargaMisPlanes!(blFin: false)
-            } else {
-                
-//                for document in querySnapshot!.documents {
-//
-//                    let nombre:PlanesGenerales = PlanesGenerales()
-//                    nombre.sID = document.documentID
-//                    nombre.setMap(valores: document.data())
-//                    self.miPerfil.arMisPlanes.append(nombre)
-//
-//                    print("\(document.documentID) => \(document.data())")
-//
-//                }
-                print("------->>>>>> ",self.miPerfil.arMisPlanes.count)
-                delegate.DHDDescargaMisPlanes!(blFin: true)
-                //self.tbTablaChamp?.reloadData()
-                //self.refreshUI()
-                
-                
-                
-            }
+        for planID in miPerfil.arMisPlanes{
+            let ruta = fireStoreDB?.collection("PlanesGenerales").document(planID)
+            ruta?.getDocument(completion: { (result, error) in
+                print(result?.data())
+            })
         }
+        
         
     }
     
