@@ -1844,6 +1844,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hjj-Y5-HaV" id="rwE-dD-ppK"/>
+                                    <outlet property="delegate" destination="hjj-Y5-HaV" id="MKU-IY-XFw"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXo-Kr-Z4f">
                                 <rect key="frame" x="16" y="617" width="36" height="30"/>
@@ -1858,7 +1862,7 @@
                         <viewLayoutGuide key="safeArea" id="wKP-yP-MnK"/>
                     </view>
                     <connections>
-                        <outlet property="tablaPlanes" destination="Ut4-lL-Xv2" id="rHn-4v-9sH"/>
+                        <outlet property="tabla1Planes" destination="Ut4-lL-Xv2" id="V0J-wh-3k8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G9-3N-wha" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2459,6 +2463,6 @@
         <image name="wallpaperapp" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ayD-li-iqq"/>
+        <segue reference="U2A-eH-LFA"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -74,16 +74,27 @@ class DataHolder: NSObject {
     }
     
     func descargarMisPlanes(delegate:DataHolderDelegate){
-        
+        self.arPlanes=[]
         for planID in miPerfil.arMisPlanes{
             let ruta = fireStoreDB?.collection("PlanesGenerales").document(planID)
             ruta?.getDocument(completion: { (result, error) in
-                print(result?.data())
+                
+                let nombre:PlanesGenerales = PlanesGenerales()
+                nombre.sID = result?.documentID
+                nombre.setMap(valores: (result?.data())!)
+                self.arPlanes.append(nombre)
+                print(self.arPlanes.count)
+                
+                print("\(String(describing: result?.documentID)) => \(String(describing: result?.data()))")
+                
+                
+                
             })
         }
-        
+        delegate.DHDDescargaMisPlanes!(blFin: true)
         
     }
+
     
     //Aqui se realizara la descarga de los planes ya filtrados
     func descargarPlanesFiesta(delegate:DataHolderDelegate){
