@@ -28,7 +28,7 @@ class DataHolder: NSObject {
     var firStorage:Storage?
     var fireStoreDB:Firestore?
     var firStorageRef:StorageReference?
-    
+    var imgPerfil:UIImageView?
     
     func initFireBase(){
         FirebaseApp.configure()
@@ -37,7 +37,6 @@ class DataHolder: NSObject {
         firStorageRef = firStorage?.reference()
         
     }
-    
     func crearPlan(nombre:String, descripcion:String, fecha:String, horario:String, limitePersonas:String, tipo:String, lugar:String, creador:String, delegate:DataHolderDelegate) {
         DataHolder.sharedInstance.fireStoreDB?.collection("PlanesGenerales").document().setData(DataHolder.sharedInstance.miPlan.getMap())
         delegate.DHDCrearPlan!(blFin: true)

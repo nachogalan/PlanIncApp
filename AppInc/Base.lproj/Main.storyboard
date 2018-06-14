@@ -218,7 +218,7 @@
         <!--PERFIL-->
         <scene sceneID="7PJ-OL-Pd9">
             <objects>
-                <viewController id="aDT-3f-vvw" sceneMemberID="viewController">
+                <viewController id="aDT-3f-vvw" customClass="VCVerPerfil" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6e-SR-M44">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,6 +302,9 @@
                         <viewLayoutGuide key="safeArea" id="upW-ik-TP7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PERFIL" id="IkM-70-F61"/>
+                    <connections>
+                        <outlet property="imgProfile" destination="qRj-ro-mu4" id="Sq8-CH-3jf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhd-hg-2LV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -389,7 +392,7 @@
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="accionBotonSubir" destination="Ium-Lf-uDF" eventType="touchUpInside" id="Alu-Nd-kbF"/>
-                                    <segue destination="mqM-O6-zvz" kind="show" id="ayD-li-iqq"/>
+                                    <segue destination="mqM-O6-zvz" kind="show" identifier="trperfil" id="ayD-li-iqq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-gz-tnX">
@@ -414,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkI-QU-0vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479" y="1398"/>
+            <point key="canvasLocation" x="477.60000000000002" y="1397.4512743628186"/>
         </scene>
         <!--RANDOM-->
         <scene sceneID="kDo-P0-3ty">

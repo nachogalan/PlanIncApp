@@ -30,6 +30,7 @@
 		4D81228120CE5D260006D65A /* VCRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81228020CE5D260006D65A /* VCRandom.swift */; };
 		4D81228320CE64900006D65A /* PlanesRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81228220CE64900006D65A /* PlanesRandom.swift */; };
 		4D8B4FCD20D25B7500CC3D6A /* VCPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */; };
+		DD715BF720D2722400A8DEA0 /* VCVerPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD715BF620D2722400A8DEA0 /* VCVerPerfil.swift */; };
 		DDF1C92220C152DF008A7101 /* TBCInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92120C152DF008A7101 /* TBCInicio.swift */; };
 		DDF1C92420C16652008A7101 /* PlanesGenerales.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92320C16652008A7101 /* PlanesGenerales.swift */; };
 		DDF1C92620C1691D008A7101 /* CeldaUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92520C1691D008A7101 /* CeldaUP.swift */; };
@@ -65,6 +66,7 @@
 		4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPerfil.swift; sourceTree = "<group>"; };
 		5D519D67D960449C48E88458 /* Pods-AppInc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.release.xcconfig"; sourceTree = "<group>"; };
 		65A7DD528AA0EA5177F910F2 /* Pods-AppInc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.debug.xcconfig"; sourceTree = "<group>"; };
+		DD715BF620D2722400A8DEA0 /* VCVerPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCVerPerfil.swift; sourceTree = "<group>"; };
 		DDF1C92120C152DF008A7101 /* TBCInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCInicio.swift; sourceTree = "<group>"; };
 		DDF1C92320C16652008A7101 /* PlanesGenerales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanesGenerales.swift; sourceTree = "<group>"; };
 		DDF1C92520C1691D008A7101 /* CeldaUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaUP.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				4D81228020CE5D260006D65A /* VCRandom.swift */,
 				4D81228220CE64900006D65A /* PlanesRandom.swift */,
 				4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */,
+				DD715BF620D2722400A8DEA0 /* VCVerPerfil.swift */,
 			);
 			path = AppInc;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				4D81228320CE64900006D65A /* PlanesRandom.swift in Sources */,
 				4D640C6C20CA82CE004ADF95 /* VCFiesta.swift in Sources */,
 				4D13CB1D20AEED8B00EE7337 /* AppInc.xcdatamodeld in Sources */,
+				DD715BF720D2722400A8DEA0 /* VCVerPerfil.swift in Sources */,
 				4D6805FB20B80D44004EFA6E /* DataHolder.swift in Sources */,
 				4D640C6E20CA82E4004ADF95 /* VCConciertos.swift in Sources */,
 				4D640C6A20CA80E8004ADF95 /* VCFiltrarPlanes.swift in Sources */,

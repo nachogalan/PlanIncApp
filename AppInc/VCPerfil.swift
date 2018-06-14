@@ -8,15 +8,13 @@
 
 import UIKit
 
-class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, DataHolderDelegate {
     @IBOutlet var imgView:UIImageView?
     @IBOutlet var txtDescripcion:UITextView?
     @IBOutlet var txtInstagram:UITextField?
     @IBOutlet var txtFacebook:UITextField?
     @IBOutlet var txtGmail:UITextField?
-    
     let imagePicker = UIImagePickerController()
-    
     var imgData:Data?
     
     override func viewDidLoad() {
@@ -33,11 +31,11 @@ class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
     @IBAction func accionBotonPerfil(){
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        
         self.present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func accionBotonSubir(){
+        
         if imgData != nil{
             let tiempoMilis:Int = Int((Date().timeIntervalSince1970 * 1000.0).rounded())
             let ruta:String = String(format: "Fotos/imagen%d.jpg", tiempoMilis)
@@ -48,18 +46,17 @@ class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
                     return
                 }
                 let downloadURL = metadata.downloadURL
+                
             }
         }
-        
-    }
+        // imgViewFinal = imgView
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let img = info[UIImagePickerControllerOriginalImage] as? UIImage
-        
         imgData = UIImageJPEGRepresentation(img!, 0.5)! as Data
-        
         imgView?.image = img
         self.dismiss(animated: true, completion: nil)
+    }
     }
 
 }
