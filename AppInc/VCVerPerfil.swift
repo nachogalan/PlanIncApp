@@ -13,6 +13,12 @@ class VCVerPerfil: UIViewController, UINavigationControllerDelegate, DataHolderD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imgProfile?.image = DataHolder.sharedInstance.imgPerfil
+        self.imgProfile?.layer.cornerRadius = 20.0
+        self.imgProfile?.clipsToBounds = true
+        
+        // Adding a border to the image profile
+        self.imgProfile?.layer.borderWidth = 10.0
+        self.imgProfile?.layer.borderColor = UIColor.lightGray.cgColor
         // Do any additional setup after loading the view.
     }
 
