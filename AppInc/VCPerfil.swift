@@ -50,13 +50,14 @@ class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
             }
         }
         // imgViewFinal = imgView
-    
-      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    DataHolder.sharedInstance.imgPerfil = self.imgView?.image
+      
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let img = info[UIImagePickerControllerOriginalImage] as? UIImage
         imgData = UIImageJPEGRepresentation(img!, 0.5)! as Data
         imgView?.image = img
         self.dismiss(animated: true, completion: nil)
-    }
     }
 
 }

@@ -2469,7 +2469,6 @@
         <image name="wallpaperapp" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qoH-wM-AB0"/>
-        <segue reference="ayD-li-iqq"/>
+        <segue reference="SHF-TE-MFt"/>
     </inferredMetricsTieBreakers>
 </document>

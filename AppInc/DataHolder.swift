@@ -28,7 +28,7 @@ class DataHolder: NSObject {
     var firStorage:Storage?
     var fireStoreDB:Firestore?
     var firStorageRef:StorageReference?
-    var imgPerfil:UIImageView?
+    var imgPerfil:UIImage?
     
     func initFireBase(){
         FirebaseApp.configure()

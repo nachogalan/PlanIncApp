@@ -12,7 +12,7 @@ class VCVerPerfil: UIViewController, UINavigationControllerDelegate, DataHolderD
    @IBOutlet var imgProfile:UIImageView?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.imgProfile?.image = DataHolder.sharedInstance.imgPerfil
         // Do any additional setup after loading the view.
     }
 
