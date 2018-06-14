@@ -265,22 +265,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-aX-yP2">
-                                <rect key="frame" x="111" y="447" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-aX-yP2" userLabel="lblInstagram">
+                                <rect key="frame" x="111" y="447" width="248" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjo-QR-y0M">
-                                <rect key="frame" x="111" y="501" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjo-QR-y0M" userLabel="lblFacebook">
+                                <rect key="frame" x="111" y="501" width="248" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-C6-798">
-                                <rect key="frame" x="111" y="552" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-C6-798" userLabel="lblGmail">
+                                <rect key="frame" x="111" y="552" width="248" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -290,8 +290,8 @@
                                 <rect key="frame" x="50" y="434" width="53" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgT-5t-ug5">
-                                <rect key="frame" x="130" y="372" width="115" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---------------" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgT-5t-ug5" userLabel="lblDescripcion">
+                                <rect key="frame" x="16" y="362" width="343" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -305,12 +305,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhd-hg-2LV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558" y="1399"/>
+            <point key="canvasLocation" x="-559.20000000000005" y="1398.3508245877063"/>
         </scene>
         <!--EditarPerfil-->
         <scene sceneID="ECj-zm-ePr">
             <objects>
-                <viewController title="EditarPerfil" id="Ium-Lf-uDF" customClass="SelectImg" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditarPerfil" id="Ium-Lf-uDF" customClass="VCPerfil" customModule="AppInc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="033-rW-P5P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,7 +352,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Subir foto"/>
                                 <connections>
-                                    <action selector="accionBotonPerfil" destination="Ium-Lf-uDF" eventType="touchUpInside" id="R6i-pd-Lq2"/>
+                                    <action selector="accionBotonPerfil" destination="Ium-Lf-uDF" eventType="touchUpInside" id="qYs-oO-58E"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6G1-2b-Vb8">
@@ -380,7 +380,6 @@
                                 <rect key="frame" x="16" y="319" width="343" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -389,7 +388,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
                                 <connections>
-                                    <action selector="accionBotonSubir" destination="Ium-Lf-uDF" eventType="touchUpInside" id="VS4-i3-Xwy"/>
+                                    <action selector="accionBotonSubir" destination="Ium-Lf-uDF" eventType="touchUpInside" id="Alu-Nd-kbF"/>
                                     <segue destination="mqM-O6-zvz" kind="show" id="ayD-li-iqq"/>
                                 </connections>
                             </button>
@@ -406,7 +405,11 @@
                         <viewLayoutGuide key="safeArea" id="6Eq-OG-uJe"/>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="VG9-Gc-BZA" id="s9y-8H-t4W"/>
+                        <outlet property="imgView" destination="VG9-Gc-BZA" id="Bha-VI-PsD"/>
+                        <outlet property="txtDescripcion" destination="XED-KC-iKD" id="Ifi-2T-vyS"/>
+                        <outlet property="txtFacebook" destination="OLj-k3-UHu" id="4fr-hj-7Q4"/>
+                        <outlet property="txtGmail" destination="7KR-Fj-WKM" id="HiZ-BQ-Sbx"/>
+                        <outlet property="txtInstagram" destination="6G1-2b-Vb8" id="v0h-Oz-UWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkI-QU-0vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2463,6 +2466,7 @@
         <image name="wallpaperapp" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U2A-eH-LFA"/>
+        <segue reference="qoH-wM-AB0"/>
+        <segue reference="ayD-li-iqq"/>
     </inferredMetricsTieBreakers>
 </document>

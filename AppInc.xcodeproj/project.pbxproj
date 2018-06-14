@@ -29,7 +29,7 @@
 		4D68060520B837A4004EFA6E /* VCMisPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68060420B837A4004EFA6E /* VCMisPlanes.swift */; };
 		4D81228120CE5D260006D65A /* VCRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81228020CE5D260006D65A /* VCRandom.swift */; };
 		4D81228320CE64900006D65A /* PlanesRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81228220CE64900006D65A /* PlanesRandom.swift */; };
-		DDC1D8C120D12C56004A1243 /* SelectImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC1D8C020D12C56004A1243 /* SelectImg.swift */; };
+		4D8B4FCD20D25B7500CC3D6A /* VCPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */; };
 		DDF1C92220C152DF008A7101 /* TBCInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92120C152DF008A7101 /* TBCInicio.swift */; };
 		DDF1C92420C16652008A7101 /* PlanesGenerales.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92320C16652008A7101 /* PlanesGenerales.swift */; };
 		DDF1C92620C1691D008A7101 /* CeldaUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1C92520C1691D008A7101 /* CeldaUP.swift */; };
@@ -62,9 +62,9 @@
 		4D68060420B837A4004EFA6E /* VCMisPlanes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMisPlanes.swift; sourceTree = "<group>"; };
 		4D81228020CE5D260006D65A /* VCRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRandom.swift; sourceTree = "<group>"; };
 		4D81228220CE64900006D65A /* PlanesRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanesRandom.swift; sourceTree = "<group>"; };
+		4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPerfil.swift; sourceTree = "<group>"; };
 		5D519D67D960449C48E88458 /* Pods-AppInc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.release.xcconfig"; sourceTree = "<group>"; };
 		65A7DD528AA0EA5177F910F2 /* Pods-AppInc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppInc/Pods-AppInc.debug.xcconfig"; sourceTree = "<group>"; };
-		DDC1D8C020D12C56004A1243 /* SelectImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImg.swift; sourceTree = "<group>"; };
 		DDF1C92120C152DF008A7101 /* TBCInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCInicio.swift; sourceTree = "<group>"; };
 		DDF1C92320C16652008A7101 /* PlanesGenerales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanesGenerales.swift; sourceTree = "<group>"; };
 		DDF1C92520C1691D008A7101 /* CeldaUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaUP.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				4D640C7520CA832B004ADF95 /* VCBares.swift */,
 				4D81228020CE5D260006D65A /* VCRandom.swift */,
 				4D81228220CE64900006D65A /* PlanesRandom.swift */,
-				DDC1D8C020D12C56004A1243 /* SelectImg.swift */,
+				4D8B4FCC20D25B7500CC3D6A /* VCPerfil.swift */,
 			);
 			path = AppInc;
 			sourceTree = "<group>";
@@ -309,9 +309,9 @@
 				4D68060520B837A4004EFA6E /* VCMisPlanes.swift in Sources */,
 				4D6805F920B80B3C004EFA6E /* VCRegister.swift in Sources */,
 				4D6805FD20B81324004EFA6E /* Perfil.swift in Sources */,
+				4D8B4FCD20D25B7500CC3D6A /* VCPerfil.swift in Sources */,
 				4D640C7220CA830A004ADF95 /* VCExcursiones.swift in Sources */,
 				4D81228120CE5D260006D65A /* VCRandom.swift in Sources */,
-				DDC1D8C120D12C56004A1243 /* SelectImg.swift in Sources */,
 				DDF1C92420C16652008A7101 /* PlanesGenerales.swift in Sources */,
 				4D640C7620CA832B004ADF95 /* VCBares.swift in Sources */,
 				4D13CB1720AEED8B00EE7337 /* ViewController.swift in Sources */,

@@ -127,6 +127,13 @@ class DataHolder: NSObject {
         
     }
     
+    func editarPerfil(descripcion:String, instagram:String, facebook:String, gmail:String, delegate:DataHolderDelegate){
+        DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document().setData(DataHolder.sharedInstance.miPerfil.getMap())
+    }
+    
+    func descargarPerfil(delegate:DataHolderDelegate){
+        
+    }
     
     func descargarPlanesQuedadas(delegate:DataHolderDelegate){
         
@@ -369,6 +376,8 @@ class DataHolder: NSObject {
 
 @objc protocol DataHolderDelegate{
     @objc optional func DHDDescargaMisPlanes(blFin:Bool)
+    @objc optional func DHDDescargaPerfil(blFin:Bool)
+    @objc optional func DHDEditarPerfil(blFin:Bool)
     @objc optional func DHDDescargaPlanes(blFin:Bool)
     @objc optional func DHDConfirmacionLogin(blFin:Bool)
     @objc optional func DHDCrearUsuarioRegistro(blFin:Bool)

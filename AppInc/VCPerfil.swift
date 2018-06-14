@@ -1,15 +1,19 @@
 //
-//  SelectImg.swift
+//  VCPerfil.swift
 //  AppInc
 //
-//  Created by IGNACIO OLAGORTA VERA on 13/6/18.
+//  Created by IGNACIO GALAN DE PINA on 14/6/18.
 //  Copyright © 2018 IGNACIO GALAN DE PINA. All rights reserved.
 //
 
 import UIKit
 
-class SelectImg: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class VCPerfil: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet var imgView:UIImageView?
+    @IBOutlet var txtDescripcion:UITextView?
+    @IBOutlet var txtInstagram:UITextField?
+    @IBOutlet var txtFacebook:UITextField?
+    @IBOutlet var txtGmail:UITextField?
     
     let imagePicker = UIImagePickerController()
     
@@ -57,17 +61,5 @@ class SelectImg: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imgView?.image = img
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }
